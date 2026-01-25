@@ -5,7 +5,8 @@ import { motion } from 'framer-motion';
 import { BarChart3, Database, Zap, Users, FileCode, BookOpen, Award, DollarSign, ExternalLink, ShieldCheck } from 'lucide-react';
 
 // Fixed image imports
-import task1 from "../../assets/images/track1.png";
+// import task1 from "../../assets/images/track1.png";
+import task1 from "../../assets/images/track1_op2.png";
 import task2 from "../../assets/images/track2.png";
 
 const challengeTracks = [
@@ -27,10 +28,15 @@ const challengeTracks = [
             "<strong>Unseen Sentences:</strong> Train on a subset of sentences and evaluate on structurally different, unseen sentences. This tests your model's ability to understand grammar, semantics, and sentence-level sign composition without prior exposure."
         ],
         links: [
-            { text: "Starter Kit", url: "https://github.com/gufranSabri/Pose86K-CSLR-Isharah", icon: FileCode },
-            { text: "Competition - Task 1 (CodaLab)", url: "https://codalab.lisn.upsaclay.fr/competitions/22899", icon: BookOpen },
-            { text: "Competition - Task 2 (CodaLab)", url: "https://codalab.lisn.upsaclay.fr/competitions/22900", icon: BookOpen }
+            { text: "Starter Kit", url: "", icon: FileCode },
+            { text: "Competition - TBA", url: "", icon: BookOpen },
+            { text: "Competition - TBA", url: "", icon: BookOpen }
         ],
+        // links: [
+        //     { text: "Starter Kit", url: "https://github.com/gufranSabri/Pose86K-CSLR-Isharah", icon: FileCode },
+        //     { text: "Competition - Task 1 (CodaLab)", url: "https://codalab.lisn.upsaclay.fr/competitions/22899", icon: BookOpen },
+        //     { text: "Competition - Task 2 (CodaLab)", url: "https://codalab.lisn.upsaclay.fr/competitions/22900", icon: BookOpen }
+        // ],
 
         prizes: [
             { place: "1st Place", amount: "$1,000" },
@@ -54,8 +60,11 @@ const challengeTracks = [
 
         evaluation: "<strong>Evaluation:</strong> Submissions will be evaluated using <strong>Top-1 Accuracy</strong>, which measures the percentage of correctly predicted gestures. Higher accuracy indicates better performance.",
         subTasks: [],
+        // links: [
+        //     { text: "Competition (Kaggle)", url: "https://www.kaggle.com/competitions/CVPR-mslr-2026-track-2", icon: BookOpen }
+        // ],
         links: [
-            { text: "Competition (Kaggle)", url: "https://www.kaggle.com/competitions/iccv-mslr-2025-track-2", icon: BookOpen }
+            { text: "TBA", url: "", icon: BookOpen }
         ],
         sponsor: null, // { name: "TBD", url: "#" },
         prizes: [] // { place: "TBD", amount: "TBD" }
@@ -114,7 +123,7 @@ const ChallengeCard = ({ track, index }) => {
                     return (
                     <a
                         key={link.text}
-                        href={link.url}
+                        // href={link.url}
                         target="_blank"
                         rel="noopener noreferrer"
                         className={`btn btn-sm border !py-2 !px-4 text-xs sm:text-sm flex items-center
@@ -131,12 +140,12 @@ const ChallengeCard = ({ track, index }) => {
 
 
 
-                {track.sponsor && (
+                {/* {track.sponsor && (
                     <p className="text-sm text-brand-neutral-600 mb-1">
                         🤝 Sponsor: <a href={track.sponsor.url} target="_blank" rel="noopener noreferrer" className="font-semibold hover:underline" style={{ color: track.accentColor.replace('text-', '') }}>{track.sponsor.name}</a>
                     </p>
-                )}
-                {track.prizes && track.prizes.length > 0 && (
+                )} */}
+                {/* {track.prizes && track.prizes.length > 0 && (
                     <div>
                         <p className={`text-sm font-semibold ${track.accentColor} mb-1 flex items-center`}><DollarSign size={16} className="mr-1.5" />Prizes:</p>
                         <ul className="text-xs sm:text-sm text-brand-neutral-600 list-disc list-inside space-y-0.5">
@@ -145,7 +154,7 @@ const ChallengeCard = ({ track, index }) => {
                             ))}
                         </ul>
                     </div>
-                )}
+                )} */}
             </div>
         </motion.div>
     );
@@ -154,7 +163,7 @@ const ChallengeCard = ({ track, index }) => {
 
 const Challenge = () => {
     return (
-        <SectionWrapper id="challenge-internal" title="SignEval 2025: The First Multimodal Sign Language Recognition Challenge" subtitle="Push the Boundaries" bgColor="bg-white">
+        <SectionWrapper id="challenge-internal" title="SignEval 2026: The Second Multimodal Sign Language Recognition Challenge" subtitle="Push the Boundaries" bgColor="bg-white">
             <motion.p
                 className="max-w-3xl mx-auto text-center text-lg text-brand-neutral-700 mb-12 md:mb-16 leading-relaxed"
                 initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }}

@@ -5,7 +5,7 @@ User-agent: *
 Allow: /
 
 # Sitemaps
-Sitemap: https://mslr2025.com/sitemap.xml
+Sitemap: https://mslr2026.com/sitemap.xml
 
 # Block AI crawlers from training on content (optional)
 User-agent: GPTBot

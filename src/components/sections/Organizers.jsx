@@ -23,20 +23,17 @@ const organizersData = {
     "Dr. Federica Proietto Salanitri — University of Catania, Italy",
     "Dr. Giovanni Bellitto — University of Catania, Italy",
     "Dr. Concetto Spampinato — University of Catania, Italy",
-    "Dr. Silvio Giancola — King Abdullah University of Science and Technology, KSA",
-    "Dr. Muhammad Haris Khan — Mohamed Bin Zayed University of AI, UAE",
-    "Dr. Moi Hoon Yap — Manchester Metropolitan University, UK",
   ],
   challengeOrganizers: [
     "Ahmed Abul Hasanaath — King Fahd University of Petroleum & Minerals, KSA",
-    "Murtadha Aljubran — Mohamed Bin Zayed University of Artificial Intelligence, UAE",
-    "Sarah Alyami — King Fahd University of Petroleum & Minerals, KSA",
-    "Dr. Egidio Ragonese — University of Catania, Italy",
-    "Dr. Gaia Caligiore - University of Modena and Reggio Emilia, Italy",
-    "Dr. Sabina Fontana - University of Catania, Italy",
-    "Dr. Senya Polikovsky — Max Planck Institute for Intelligent Systems, Tübingen, Germany",
-    "Dr. Sevgi Z. Gurbuz — North Carolina State University, USA",
-    "Eng. Kamrul Islam — North Carolina State University, USA",
+    "Dr. Sarah Alyami — Imam Abdulrahman Bin Faisal University, KSA",
+    "Nour Imane Zeghib — King Fahd University of Petroleum & Minerals, KSA",
+    // "Dr. Egidio Ragonese — University of Catania, Italy",
+    // "Dr. Gaia Caligiore - University of Modena and Reggio Emilia, Italy",
+    // "Dr. Sabina Fontana - University of Catania, Italy",
+    // "Dr. Senya Polikovsky — Max Planck Institute for Intelligent Systems, Tübingen, Germany",
+    // "Dr. Sevgi Z. Gurbuz — North Carolina State University, USA",
+    // "Eng. Kamrul Islam — North Carolina State University, USA",
   ],
   contact: [
     { name: "Eng. Raffaele Mineo", email: "raffaele.mineo[at]unict.it" },
@@ -133,7 +130,7 @@ const Organizers = () => {
             </div>
             <div className="mt-8 pt-6 border-t border-brand-neutral-200 flex items-center justify-center text-brand-neutral-600">
                 <MapPin size={20} className="mr-2 text-brand-primary" />
-                <span>IEEE/CVF ICCV 2025, Honolulu, Hawaii, USA</span>
+                <span>IEEE/CVF CVPR 2026, Denver, Colorado, USA</span>
             </div>
           </motion.div>
       </SectionWrapper>

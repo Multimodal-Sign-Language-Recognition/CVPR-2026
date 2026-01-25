@@ -4,19 +4,22 @@ import Header from './components/layout/Header';
 import Hero from './components/sections/Hero';
 import Footer from './components/layout/Footer';
 import Home from './components/sections/Home';
-import Schedule from './components/sections/Schedule';
+
+import Dates from './components/sections/Dates';
 import Program from './components/sections/Program';
-import Submission from './components/sections/Submission';
+import Submission from './components/sections/Guidelines';
 import Challenge from './components/sections/Challenge';
 import Organizers from './components/sections/Organizers';
 
+// import CallForPapers from './components/sections/Submission';
+
 export const navLinksData = [
   { id: 'home', name: 'Home', component: Home, hasHero: true },
-  { id: 'schedule', name: 'Schedule', component: Schedule },
-  { id: 'program', name: 'Program', component: Program },
-  { id: 'submission', name: 'Submissions', component: Submission },
+  { id: 'submission', name: 'Submission', component: Submission },
+  { id: 'dates', name: 'Dates', component: Dates },
   { id: 'challenge', name: 'Challenge', component: Challenge },
-  { id: 'organizers', name: 'Organizers', component: Organizers },
+  { id: 'schedule', name: 'Schedule', component: Program },
+  { id: 'team', name: 'Team', component: Organizers },
 ];
 
 function App() {

@@ -8,35 +8,35 @@ export function generateStructuredData() {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "Event",
-    name: "MSLR 2025 - 1st Multimodal Sign Language Recognition Workshop",
+    name: "MSLR 2026 - 1st Multimodal Sign Language Recognition Workshop",
     description:
-      "IEEE/CVF ICCV 2025 1st Workshop on Multimodal Sign Language Recognition",
-    startDate: "2025-10-20T08:30:00-10:00",
-    endDate: "2025-10-20T18:15:00-10:00",
+      "IEEE/CVF CVPR 2026 1st Workshop on Multimodal Sign Language Recognition",
+    startDate: "2026-10-20T08:30:00-10:00",
+    endDate: "2026-10-20T18:15:00-10:00",
     eventStatus: "https://schema.org/EventScheduled",
     eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
     location: {
       "@type": "Place",
-      name: "ICCV 2025 Conference Venue",
+      name: "CVPR 2026 Conference Venue",
       address: {
         "@type": "PostalAddress",
-        addressLocality: "Honolulu",
+        addressLocality: "Denver",
         addressRegion: "Hawaii",
         addressCountry: "USA",
       },
     },
     organizer: {
       "@type": "Organization",
-      name: "MSLR 2025 Organizing Committee",
-      url: "https://Multimodal-Sign-Language-Recognition.github.io/ICCV-2025",
+      name: "MSLR 2026 Organizing Committee",
+      url: "https://Multimodal-Sign-Language-Recognition.github.io/MSLR-2026",
     },
     offers: {
       "@type": "Offer",
-      url: "https://Multimodal-Sign-Language-Recognition.github.io/ICCV-2025/#registration",
+      url: "https://Multimodal-Sign-Language-Recognition.github.io/MSLR-2026/#registration",
       price: "0",
       priceCurrency: "USD",
       availability: "https://schema.org/InStock",
-      validFrom: "2025-05-12",
+      validFrom: "2026-05-12",
     },
     performer: [
       {
@@ -72,10 +72,10 @@ export function generateStructuredData() {
  * @returns {Array} Array of OG meta objects
  */
 export function generateOpenGraphTags({
-  title = "MSLR 2025 | 1st Multimodal Sign Language Recognition Workshop",
-  description = "ICCV 2025 1st Workshop on Multimodal Sign Language Recognition in Honolulu, Hawaii",
+  title = "MSLR 2026 | 1st Multimodal Sign Language Recognition Workshop",
+  description = "CVPR 2026 1st Workshop on Multimodal Sign Language Recognition in Denver, Colorado",
   imageUrl = "/src/assets/images/logo_small.jpeg",
-  url = "https://Multimodal-Sign-Language-Recognition.github.io/ICCV-2025",
+  url = "https://Multimodal-Sign-Language-Recognition.github.io/MSLR-2026",
   type = "website",
 } = {}) {
   return [
@@ -84,7 +84,7 @@ export function generateOpenGraphTags({
     { property: "og:image", content: imageUrl },
     { property: "og:url", content: url },
     { property: "og:type", content: type },
-    { property: "og:site_name", content: "1st MSLR 2025 Workshop" },
+    { property: "og:site_name", content: "1st MSLR 2026 Workshop" },
 
     // Twitter Card
     { name: "twitter:card", content: "summary_large_image" },
@@ -100,7 +100,10 @@ export function generateOpenGraphTags({
  * @param {string} path - Current page path
  * @returns {string} - Canonical URL
  */
-export function getCanonicalUrl(basePath = "https://Multimodal-Sign-Language-Recognition.github.io/ICCV-2025", path = "") {
+export function getCanonicalUrl(
+  basePath = "https://Multimodal-Sign-Language-Recognition.github.io/MSLR-2026",
+  path = "",
+) {
   // Remove trailing slash from base and leading slash from path
   const baseWithoutTrailingSlash = basePath.replace(/\/$/, "");
   const pathWithoutLeadingSlash = path.replace(/^\//, "");
@@ -108,7 +111,7 @@ export function getCanonicalUrl(basePath = "https://Multimodal-Sign-Language-Rec
   // Join with a single slash
   return `${baseWithoutTrailingSlash}/${pathWithoutLeadingSlash}`.replace(
     /\/$/,
-    ""
+    "",
   );
 }
 
